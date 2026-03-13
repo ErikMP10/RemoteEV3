@@ -1,5 +1,4 @@
 android {
-    compileSdkVersion 23
 
     defaultConfig {
         applicationId "tanas.ca.ev3controller"
