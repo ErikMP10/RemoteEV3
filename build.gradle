@@ -1,16 +1,22 @@
 buildscript {
     repositories {
         google()
-        mavenCentral() // Cambiamos jcenter() por mavenCentral()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.3' // Versión más estable para este proyecto
+        // Usamos una versión de Gradle compatible con proyectos antiguos y Java 11
+        classpath 'com.android.tools.build:gradle:4.2.2'
     }
 }
 
 allprojects {
     repositories {
         google()
-        mavenCentral() // Cambiamos jcenter() por mavenCentral()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
