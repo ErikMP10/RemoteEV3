@@ -1,10 +1,10 @@
 android {
+    compileSdkVersion 34
 
     defaultConfig {
         applicationId "tanas.ca.ev3controller"
         minSdkVersion 23
         targetSdkVersion 34
-        compileSdkVersion 34
         versionCode 1
         versionName "1.0"
     }
